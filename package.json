@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "scrap": "node ./src/utils/scrapperLauncher.js"
+    "scrap": "node ./src/utils/scrapperLauncher.js" 
   },
   "keywords": [],
   "author": "",
