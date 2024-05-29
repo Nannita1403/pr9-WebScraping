@@ -8,6 +8,11 @@ console.log(url);
     const page = await browser.newPage();
     await page.goto(url);
     await page.setViewport({width:1080, height:1024});
+    const buttonCookies = await page.waitForSelector(
+        "#__cn_close_content"
+      );
+  
+      await buttonCookies.evaluate((el) => el.click());
     repeat(page, browser);
 };
 
